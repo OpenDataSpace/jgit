@@ -782,8 +782,9 @@ public class ResolveMerger extends ThreeWayMerger {
 	 * @return the working tree file to which the merged content was written.
 	 * @throws FileNotFoundException
 	 * @throws IOException
+	 * @since 4.5
 	 */
-	private File writeMergedFile(MergeResult<RawText> result)
+	protected File writeMergedFile(final MergeResult<RawText> result)
 			throws FileNotFoundException, IOException {
 		File workTree = db.getWorkTree();
 		FS fs = db.getFS();
