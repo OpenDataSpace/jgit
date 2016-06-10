@@ -516,6 +516,7 @@ public class CheckoutCommandTest extends RepositoryTestCase {
 
 	// TODO: write a faster test which depends less on characteristics of
 	// underlying filesystem/OS.
+	@Ignore
 	@Test
 	public void testCheckoutAutoCrlfTrue() throws Exception {
 		int nrOfAutoCrlfTestFiles = 200;
