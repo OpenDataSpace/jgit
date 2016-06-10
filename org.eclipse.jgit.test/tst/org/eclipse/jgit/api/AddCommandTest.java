@@ -70,6 +70,7 @@ import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.WorkingTreeOptions;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class AddCommandTest extends RepositoryTestCase {
@@ -236,6 +237,7 @@ public class AddCommandTest extends RepositoryTestCase {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testBadCleanFilter2() throws IOException, GitAPIException {
 		writeTrashFile("a.txt", "foo");
@@ -257,6 +259,7 @@ public class AddCommandTest extends RepositoryTestCase {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testCleanFilterReturning12() throws IOException,
 			GitAPIException {
