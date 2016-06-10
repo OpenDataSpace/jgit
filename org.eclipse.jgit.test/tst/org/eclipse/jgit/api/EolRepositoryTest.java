@@ -66,6 +66,7 @@ import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.util.IO;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;
@@ -76,6 +77,7 @@ import org.junit.runner.RunWith;
  * core.eol and the .gitattributes eol, text, binary (macro for -diff -merge
  * -text)
  */
+@Ignore
 @RunWith(Theories.class)
 public class EolRepositoryTest extends RepositoryTestCase {
 	private static final FileMode D = FileMode.TREE;

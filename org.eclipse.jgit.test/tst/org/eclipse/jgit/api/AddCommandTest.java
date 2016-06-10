@@ -136,6 +136,7 @@ public class AddCommandTest extends RepositoryTestCase {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testCleanFilterEnvironment()
 			throws IOException, GitAPIException {
@@ -216,6 +217,7 @@ public class AddCommandTest extends RepositoryTestCase {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testBadCleanFilter() throws IOException, GitAPIException {
 		writeTrashFile("a.txt", "foo");
