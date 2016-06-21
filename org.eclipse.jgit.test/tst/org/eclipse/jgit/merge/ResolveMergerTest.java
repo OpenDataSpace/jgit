@@ -64,7 +64,6 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.eclipse.jgit.util.FileUtils;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
@@ -686,7 +685,6 @@ public class ResolveMergerTest extends RepositoryTestCase {
 		fis.close();
 	}
 
-	@Ignore
 	@Theory
 	public void checkForCorrectIndex(MergeStrategy strategy) throws Exception {
 		File f;

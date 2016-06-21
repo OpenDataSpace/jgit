@@ -88,7 +88,6 @@ import org.eclipse.jgit.transport.RemoteConfig;
 import org.eclipse.jgit.transport.URIish;
 import org.eclipse.jgit.util.FileUtils;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class CheckoutCommandTest extends RepositoryTestCase {
@@ -516,7 +515,6 @@ public class CheckoutCommandTest extends RepositoryTestCase {
 
 	// TODO: write a faster test which depends less on characteristics of
 	// underlying filesystem/OS.
-	@Ignore
 	@Test
 	public void testCheckoutAutoCrlfTrue() throws Exception {
 		int nrOfAutoCrlfTestFiles = 200;
@@ -740,7 +738,6 @@ public class CheckoutCommandTest extends RepositoryTestCase {
 		assertEquals("fee\n", read("src/a.txt"));
 	}
 
-	@Ignore
 	@Test
 	public void testSmudgeAndClean() throws Exception {
 		File clean_filter = writeTempFile("sed s/V1/@version/g");
