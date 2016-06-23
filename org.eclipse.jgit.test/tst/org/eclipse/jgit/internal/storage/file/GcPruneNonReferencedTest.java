@@ -55,6 +55,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.revwalk.RevBlob;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevTree;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class GcPruneNonReferencedTest extends GcTestCase {
@@ -86,6 +87,7 @@ public class GcPruneNonReferencedTest extends GcTestCase {
 		assertFalse(repo.hasObject(a));
 	}
 
+	@Ignore
 	@Test
 	public void nonReferencedObjects_onlyExpiredPruned() throws Exception {
 		RevBlob a = tr.blob("a");

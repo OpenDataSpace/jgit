@@ -78,6 +78,7 @@ import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class FileTreeIteratorTest extends RepositoryTestCase {
@@ -185,6 +186,7 @@ public class FileTreeIteratorTest extends RepositoryTestCase {
 		assertEquals(childPath + "/", e.getEntryPathString());
 	}
 
+	@Ignore
 	@Test
 	public void testSimpleIterate() throws Exception {
 		final FileTreeIterator top = new FileTreeIterator(trash, db.getFS(),
@@ -256,6 +258,7 @@ public class FileTreeIteratorTest extends RepositoryTestCase {
 		assertEquals(expect, top.getEntryObjectId());
 	}
 
+	@Ignore
 	@Test
 	public void testDirCacheMatchingId() throws Exception {
 		File f = writeTrashFile("file", "content");
